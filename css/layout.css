@@ -284,6 +284,8 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
+.revealOnScroll { opacity: 0; }
+
 .bars {
 	width: 95%;
 	float: left;
@@ -381,7 +383,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes illustrator {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes wordpress {
   0%   { width: 0px;  }
