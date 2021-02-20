@@ -154,13 +154,14 @@
 
 
                 <!-- portfolio-wrapper -->
-                <div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves cf">
+                <div id="portfolio-wrapper" class="bgrid-thirds s-bgrid-halves cf">
 
-                    <div class="columns portfolio-item">
+
+		     <div class="columns portfolio-item">
                         <div class="item-wrap">
 
-                            <a href="#modal-01" title="Human Activity Recognition">
-                                <img alt="" src="images/portfolio/har.jpg">
+                            <a href="#modal-01" title="Human Activity Recognition" >
+                                <img alt="" src="images/portfolio/har.jpg" width="300" height="200">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
                                         <h5>Activity Recognition</h5>
@@ -176,14 +177,56 @@
                         </div>
                     </div> <!-- item end -->
 
+
+		    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+                            <a href="#modal-02" title="Optical Flow">
+                                <img alt="" src="images/portfolio/ofl.png" width="300" height="200">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Optical Flow Estimation</h5>
+                                        <p>C++ </p>
+                                        <p>Cmake</p>
+                                        </p>
+                                        <p>Traditional Computer Vision </p>
+                                    </div>
+                                </div>
+                                <div class="link-icon"><i class="icon-plus"></i></div>
+                            </a>
+
+                        </div>
+                    </div> <!-- item end -->
+
+
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
 
-                            <a href="#modal-02" title="Hololens LaserScan Visualisation">
-                                <img alt="" src="images/portfolio/holo.jpeg">
+                            <a href="#modal-03" title="Mixture of Deep Experts">
+                                <img alt="" src="images/portfolio/fusion.png" width="300" height="200">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Hololens LaserScan VisualisatioD</h5>
+                                        <h5>Mixture of Deep Experts</h5>
+                                        <p>Deep learning</p>
+                                        <p>Pytorch</p>
+                                        <p>Computer vision</p>
+                                        <p>Sensor Fusion</p>                                        
+                                    </div>
+                                </div>
+                                <div class="link-icon"><i class="icon-plus"></i></div>
+                            </a>
+
+                        </div>
+                    </div> <!-- item end -->
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+                            <a href="#modal-04" title="Hololens LaserScan Visualisation">
+                                <img alt="" src="images/portfolio/holo.jpeg" width="300" height="200">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Hololens LaserScan Visualisation</h5>
                                         <p>C# <br>Unity3D <br>Augmented Reality <br>Mixed Reality</p>
                                     </div>
                                 </div>
@@ -193,15 +236,12 @@
                         </div>
                     </div> <!-- item end -->
 
-                </div>
-
-
-                <div id="portfolio-wrapper" class="bgrid-halves s-bgrid-halves cf">
+                
 
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <a href="#modal-03" title="Image Annotator">
-                                <img alt="" src="images/portfolio/anno.jpg">
+                            <a href="#modal-05" title="Image Annotator">
+                                <img alt="" src="images/portfolio/anno.jpg" width="300" height="200">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
                                         <h5>Image Annotator</h5>
@@ -218,8 +258,8 @@
 
                     <div class="columns portfolio-item">
                         <div class="item-wrap">
-                            <a href="#modal-04" title="Diabetic RetinoPathy Detection">
-                                <img alt="" src="images/portfolio/retina.jpg">
+                            <a href="#modal-06" title="Diabetic RetinoPathy Detection">
+                                <img alt="" src="images/portfolio/retina.jpg" width="300" height="200">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
                                         <h5>Diabetic Retinopathy Detection</h5>
@@ -245,15 +285,16 @@
          --------------------------------------------------------------- -->
 
             <div id="modal-01" class="popup-modal mfp-hide">
+            
 
-                <img class="scale-with-grid" src="images/portfolio/modals/m-har.jpg" alt="" />
+                <img class="scale-with-grid" src="images/portfolio/modals/m-har.jpg" alt="" width="500"/>
 
                 <div class="description-box">
                     <h4>Human Activity Recognition</h4>
                     <p>Human Activity Recognition using timeseries data obtained from multiple sensors placed over the
                         body. Also developed a Mobile application as
                         an extension, that would predict the movement of your phone based on realtime IMU values on the
-                        Phone using a 1D CNN Tflite model, trained ina similar way</p>
+                        Phone using a 1D CNN Tflite model, trained in a similar way</p>
                     <span class="categories"><i class="fa fa-tag"></i>Python, Timeseries data, Tflite, Mobile
                         application</span>
                 </div>
@@ -269,15 +310,73 @@
                     <center>
                         <a href="https://github.com/pavithranp/HumanActivityRecognition" target="_blank">Movement
                             prediction Android</a>
-                        <a class="popup-modal-dismiss">Close</a>
+                      </center>
+                </div>
+                <div class="link-box">
+                    <center>
+			<a class="popup-modal-dismiss">Close</a>
+                        
                     </center>
                 </div>
 
             </div><!-- modal-01 End -->
 
-            <div id="modal-02" class="popup-modal mfp-hide">
+	    <div id="modal-02" class="popup-modal mfp-hide">
 
-                <img class="scale-with-grid" src="images/portfolio/modals/m-holo.jpg" alt="" />
+                <img class="scale-with-grid" src="images/portfolio/modals/m-gating.png" alt="" width="500"/>
+
+                <div class="description-box">
+                    <h4>Mixture of Deep Experts</h4>
+                    <p>Implements a Sensor Fusion approach that consists of a gating network that chooses features from CNNs trained individually on different modalities RGB, Depth,... based on a paper titled 'Choosing Smartly' presented as IROS16</p>
+                    <span class="categories"><i class="fa fa-tag"></i>Python, Pytorch, Computer vision </span>
+                </div>
+
+
+                <div class="link-box">
+                    <center>
+                        <a href="https://github.com/pavithranp/MixtureOfDeepExperts" target="_blank">Mixture of Deep Experts</a>
+                    </center>
+                </div>
+                <div class="link-box">
+                    <center>
+			<a class="popup-modal-dismiss">Close</a>
+                        
+                    </center>
+                </div>
+
+            </div><!-- modal-01 End -->
+
+	<div id="modal-03" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-gating.png" alt="" width="500"/>
+
+                <div class="description-box">
+                    <h4>Optical Flow Implementations</h4>
+                    <p>This repo contains implementation of Dense Optical flow algorithms in C++, Currently contains Block Matching method, and Horn and schunck method for optical flow estimation</p>
+                    <span class="categories"><i class="fa fa-tag"></i>C++ , cmake, Eigen
+                        application</span>
+                </div>
+
+
+                <div class="link-box">
+                    <center>
+                        <a href="https://github.com/pavithranp/OpticalFlowImplementations" target="_blank">Optical Flow Estimation</a>
+                    </center>
+                </div>
+                <div class="link-box">
+                    <center>
+			<a class="popup-modal-dismiss">Close</a>
+                        
+                    </center>
+                </div>
+
+
+            </div><!-- modal-01 End -->
+
+
+            <div id="modal-04" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-holo.jpg" alt="" width="500"/>
 
                 <div class="description-box">
                     <h4>Hololens LaserScanner Visualization</h4>
@@ -298,15 +397,21 @@
                 <div class="link-box">
                     <center>
                         <a href="https://github.com/pavithranp/HorseGuidedAR" target="_blank">Hololens Application</a>
-                        <a class="popup-modal-dismiss">Close</a>
+                        
                     </center>
                 </div>
-
+                <div class="link-box">
+                    <center>
+			<a class="popup-modal-dismiss">Close</a>
+                        
+                    </center>
+                </div>
+                
             </div><!-- modal-02 End -->
 
-            <div id="modal-03" class="popup-modal mfp-hide">
+            <div id="modal-05" class="popup-modal mfp-hide">
 
-                <img class="scale-with-grid" src="images/portfolio/modals/m-anno.jpeg" alt="" />
+                <img class="scale-with-grid" src="images/portfolio/modals/m-anno.jpeg" alt="" width="500"/>
 
                 <div class="description-box">
                     <h4>Mobile Image Annotator</h4>
@@ -317,14 +422,20 @@
 
                 <div class="link-box">
                     <a href="https://github.com/avtools/img_annotator" target="_blank">Details</a>
-                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+                <div class="link-box">
+                    <center>
+			<a class="popup-modal-dismiss">Close</a>
+                        
+                    </center>
                 </div>
 
             </div><!-- modal-03 End -->
 
-            <div id="modal-04" class="popup-modal mfp-hide">
-
-                <img class="scale-with-grid" src="images/portfolio/modals/m-retina.jpg" alt="" />
+            <div id="modal-06" class="popup-modal mfp-hide">
+            
+			
+                <img src="images/portfolio/modals/m-diab.png" alt="" width="500" class="center"/>
 
                 <div class="description-box">
                     <h4>Diabetic Retinopathy Detection</h4>
@@ -337,8 +448,14 @@
 
                 <div class="link-box">
                     <a href="https://github.com/pavithranp/DiabeticRetinopathyDetection" target="_blank">Details</a>
-                    <a class="popup-modal-dismiss">Close</a>
                 </div>
+                <div class="link-box">
+        	<center>
+        		<a class="popup-modal-dismiss">Close</a>
+		 </center>
+                                    
+                </div>
+	       
             </div><!-- modal-04 End -->
 
         </div> <!-- row End -->
