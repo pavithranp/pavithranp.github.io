@@ -1,2 +1,2 @@
 # pavithranp.github.io
-A place to find all my work (under development)
+A place to find all my work 
